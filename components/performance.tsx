@@ -27,10 +27,10 @@ import {
             </CardHeader>
             <CardContent>
               <div className="grid gap-3">
-                 {courses?.map((c, idx) => (
-                  <div key={c.courseId} className="flex items-center justify-between">
-                   <div>{idx + 1}. {c.courseTitle}</div>
-                   <div className="text-sm text-muted-foreground">avg {minutesToHoursLabel(c.avgTimeSpent)} · {c.engagements} engagements</div>
+                 {courses?.map(({courseId, courseTitle, avgTimeSpent, engagements}, idx) => (
+                  <div key={courseId} className="flex items-center justify-between">
+                   <div>{idx + 1}. {courseTitle}</div>
+                   <div className="text-sm text-muted-foreground">avg {minutesToHoursLabel(avgTimeSpent)} · {engagements} engagements</div>
                   </div>
                 ))}
               </div>
