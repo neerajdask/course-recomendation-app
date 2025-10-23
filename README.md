@@ -108,3 +108,4 @@ Please complete the assignment within one week of receiving it.
 10. There is a mismatch on the `/engage` endpoint. I have added a todo on what needs to be fixed.
 11. Under the assumption that the endpoint is wrong, I have added a deprecation warning to the `GET` call on `/engage`.
 12. Feature: Search and filtering on the table to see quickly how certain courses/ users are consuming a course.
+13. Deployment using Vercel.
